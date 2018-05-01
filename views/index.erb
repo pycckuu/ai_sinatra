@@ -1,8 +1,20 @@
+<h3> Load the Data and Plot data distribuition </h3> <p>
+
+<img src="<%= 'violins.png' %>" />
+
+<p> The data is skewed to the "lower" end from the mean.
+
+<h3> Check data for correlation </h3>
+
+<img src="<%= 'correlations.png' %>" />
+
+<p> There is no drastic correlations (>90) between the columns. So nothing to reduce here. <p>
+
 <h3> Figure shows different models performance: </h3>
 <p>
 
 <img src="<%= 'models_perform.png' %>" />
-
+<p> As expected, regression models perform better than classification ones on this dataset.
 <p> The ensebmle of top 5 models (OrthogonalMatchingPursuitCV, LinearRegression, Lars, Ridge, and BayesianRidge) were taken to predict the amount of bags: <p>
 <img src="<%= 'ensemble.png' %>" />
 
@@ -25,7 +37,9 @@
 <p>
 For details about learning procedure, please, refer to the page describing the steps taken:
 
-click here
+<a href="/steps_taken.html">click here</a>
+
+
 
 <p>
 In general, all algorithms underestimate the prediction of bags in the midrange values. It would be required to pick the algorithms separately and tune the parameters for the best results. Also, it is possible to introduce the "smooth correction function" to adjust overpredicted values below "3" and underpredicted values of bags above "3".
