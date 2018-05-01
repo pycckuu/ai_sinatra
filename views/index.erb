@@ -3,13 +3,20 @@
 
 <img src="<%= 'models_perform.png' %>" />
 
-<p> The ensebmle of models (RandomForrestRegressor and LinearRegression models) were taken to predict the amount of bags: <p>
+<p> The ensebmle of top 5 models (OrthogonalMatchingPursuitCV, LinearRegression, Lars, Ridge, and BayesianRidge) were taken to predict the amount of bags: <p>
 <img src="<%= 'ensemble.png' %>" />
+
+<p> <h3> The resultsing metrics of the Ensemble: </h3>
+<p> Mean squared error : 0.907
+<p> r2 score : 0.754
+<p> Median absolute error : 0.603
+<p> Explained variance score : 0.754
+<p> Bias : -0.224
 
 
 <p>
 
-Or one to one plot (you can move, zoom in/out etc.):
+<h3> One to one plot (you can move, zoom in/out etc.): </h3>
 
 <%= erb :model_perform %>
 
